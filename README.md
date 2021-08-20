@@ -1,5 +1,5 @@
 # Foro interactivo
-![Mi captura de pantalla](agendaFirebase.png)
+![Mi captura de pantalla](muro-interactivo.png)
 
 # Getting Started with Create React App
 
