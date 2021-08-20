@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import withFirebaseAuth from 'react-with-firebase-auth';
-import firebase from 'firebase/app';
+//import withFirebaseAuth from 'react-with-firebase-auth';
+//import firebase from 'firebase/app';
 import 'firebase/auth';
-import { db } from '../firebaseConfig';
-
-const firebaseApp = firebase.initializeApp(db);
 
 class Login extends Component {
     render() {
@@ -25,12 +22,5 @@ class Login extends Component {
         );
     }
 }
-const firebaseAppAuth = firebaseApp.Auth();
-const providers = {
-    googleProvider : new firebase.auth.GoogleAuthProvider(),
-};
 
-export default withFirebaseAuth({
-    providers,
-    firebaseAppAuth,
-})(Login);
+export default Login;

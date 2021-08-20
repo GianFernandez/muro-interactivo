@@ -1,5 +1,8 @@
 import firebase from "firebase/app";
 import 'firebase/firestore';
+import withFirebaseAuth from 'react-with-firebase-auth';
+import Login from "./components/Login";
+import 'firebase/auth';
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -13,4 +16,15 @@ var firebaseConfig = {
 
 // Initialize Firebase
 const fb = firebase.initializeApp(firebaseConfig);
+
+//const firebaseAppAuth = fb.Auth(fb);
+const providers = {
+    googleProvider : new firebase.auth.GoogleAuthProvider(),
+};
+
+export default withFirebaseAuth({
+    providers,
+    //firebaseAppAuth,
+})(Login);
+
 export const db = fb.firestore();
