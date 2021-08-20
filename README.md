@@ -1,4 +1,4 @@
-# Foro interactivo
+# FORO INTERACTIVO
 ![Mi captura de pantalla](muro-interactivo.png)
 
 # Getting Started with Create React App
